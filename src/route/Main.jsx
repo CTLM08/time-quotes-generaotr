@@ -114,10 +114,10 @@ const Main = () => {
   }
   return (
     <div className="bg-slate-400 h-screen w-full flex items-center justify-center flex-col">
-      <div className="text-xs md:text-xl text-center ">{p}</div>
+      <div className="text-sm md:text-xl text-center ">{p}</div>
       <div className="flex flex-row gap-3">
         <div className="" onClick={() => generate()}>
-          <Icon icon="clarity:refresh-line" className="text-center w-6 h-6" />
+          <Icon icon="clarity:refresh-line" className="text-center w-5 h-5 md:w-6 md:h-6" />
         </div>
         <div
           onClick={() => {
@@ -128,7 +128,7 @@ const Main = () => {
             copy(p);
           }}
         >
-          <Icon  icon={copied ? "ic:baseline-done-outline" : "akar-icons:copy"} className="w-6 h-6"/>
+          <Icon  icon={copied ? "ic:baseline-done-outline" : "akar-icons:copy"} className="w-5 h-5 md:w-6 md:h-6"/>
         </div>
       </div>
     </div>
